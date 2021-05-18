@@ -1,45 +1,73 @@
-.main-div{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: rgb(250, 245, 256);
-}
-.small-div{
-  display: flex;
-}
 
-.arrow{
-  font-size: 75px;
-  color: rgb(225, 213, 255);
-
-}
-.span{
-  width: 100px;
-  height: 100px;
-  background-color:rgb(135, 92, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  box-shadow: 1px 25px 10px rgb(219, 204, 255) ;
-  animation-name: slide;
-  animation-duration: 2s;
+  .main-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(250, 245, 256);
+  }
+  .small-div{
+    display: flex;
+  }
+  
+  .arrow{
+    font-size: 75px;
+    color: rgb(225, 213, 255);
+  
+  }
+  .span{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(135, 92, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 1px 25px 10px rgb(219, 204, 255) ;
+    position: relative;
+  }
+.span.animate-right{
+  animation-name: righty;
+  animation-duration: 0.3s;
   position: relative;
 }
-@keyframes slide{
-0% {left: 0px; top: 0px;}
-50% { left: 60px;top: 0px }
-100% { left: 0px; top: 0px }
+@keyframes righty{
+  0% {left:0px; top:0px;}
+  50% {left:60px; top:0px;}
+  100% {left:0px; top:0px;}
+}    
+.span.animate-left{
+  animation-name: lefty;
+  animation-duration: 0.3s;
+  position: relative;
+}
+@keyframes lefty{
+  0% {right:0px; top:0px;}
+  50% {right:60px; top:0px;}
+  100% {right:0px; top:0px;}
+}  
+  
+  .heading{
+    color:white;
+    font-size: 50px;
+  
+  }
+  .button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  
 
-}
-.heading{
-  color:white;
-  font-size: 50px;
 
-}
-.button{
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
+
+
+
+
+
+
+
+
+
+
+
