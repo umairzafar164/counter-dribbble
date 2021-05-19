@@ -5,7 +5,7 @@ function Counter() {
   const [number, setNumber] = useState({ currentNumber: 0, animation: "none" });
   const previous = () => {
     setNumber({
-      currentNumber: number.currenNumber - 1,
+      currentNumber: number.currentNumber - 1,
       animation: "animate-left",
     });
   };
@@ -37,7 +37,7 @@ function Counter() {
           <h1 className="heading">{number.currentNumber}</h1>
         </span>
         <button onClick={next} className="button" style={{ cursor: "pointer" }}>
-          {" "}
+          
           <MdKeyboardArrowRight className="arrow" />
         </button>
       </div>
